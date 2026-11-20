@@ -6,14 +6,30 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		7F781C3E3087E1A400EAE3D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F781C233087E16D00EAE3D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F781C2A3087E16D00EAE3D6;
+			remoteInfo = "Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		7F781C2B3087E16D00EAE3D6 /* Mobile_Activity8: Data persistence with SwiftData and SwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile_Activity8: Data persistence with SwiftData and SwiftTest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F781C2B3087E16D00EAE3D6 /* Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F781C3B3087E1A400EAE3D6 /* Mobile_Activity8Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mobile_Activity8Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		7F781C2D3087E16D00EAE3D6 /* Mobile_Activity8: Data persistence with SwiftData and SwiftTest */ = {
+		7F781C2D3087E16D00EAE3D6 /* Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Mobile_Activity8: Data persistence with SwiftData and SwiftTest";
+			path = "Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest";
+			sourceTree = "<group>";
+		};
+		7F781C3C3087E1A400EAE3D6 /* Mobile_Activity8Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Mobile_Activity8Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -24,13 +40,19 @@
 			files = (
 			);
 		};
+		7F781C393087E1A400EAE3D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		7F781C223087E16D00EAE3D6 = {
 			isa = PBXGroup;
 			children = (
-				7F781C2D3087E16D00EAE3D6 /* Mobile_Activity8: Data persistence with SwiftData and SwiftTest */,
+				7F781C2D3087E16D00EAE3D6 /* Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest */,
+				7F781C3C3087E1A400EAE3D6 /* Mobile_Activity8Tests */,
 				7F781C2C3087E16D00EAE3D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -38,7 +60,8 @@
 		7F781C2C3087E16D00EAE3D6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7F781C2B3087E16D00EAE3D6 /* Mobile_Activity8: Data persistence with SwiftData and SwiftTest.app */,
+				7F781C2B3087E16D00EAE3D6 /* Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest.app */,
+				7F781C3B3087E1A400EAE3D6 /* Mobile_Activity8Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,9 +69,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7F781C2A3087E16D00EAE3D6 /* Mobile_Activity8: Data persistence with SwiftData and SwiftTest */ = {
+		7F781C2A3087E16D00EAE3D6 /* Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F781C363087E16E00EAE3D6 /* Build configuration list for PBXNativeTarget "Mobile_Activity8: Data persistence with SwiftData and SwiftTest" */;
+			buildConfigurationList = 7F781C363087E16E00EAE3D6 /* Build configuration list for PBXNativeTarget "Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest" */;
 			buildPhases = (
 				7F781C273087E16D00EAE3D6 /* Sources */,
 				7F781C283087E16D00EAE3D6 /* Frameworks */,
@@ -57,12 +80,33 @@
 			buildRules = (
 			);
 			fileSystemSynchronizedGroups = (
-				7F781C2D3087E16D00EAE3D6 /* Mobile_Activity8: Data persistence with SwiftData and SwiftTest */,
+				7F781C2D3087E16D00EAE3D6 /* Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest */,
 			);
-			name = "Mobile_Activity8: Data persistence with SwiftData and SwiftTest";
-			productName = "Mobile_Activity8: Data persistence with SwiftData and SwiftTest";
-			productReference = 7F781C2B3087E16D00EAE3D6 /* Mobile_Activity8: Data persistence with SwiftData and SwiftTest.app */;
+			name = "Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest";
+			productName = "Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest";
+			productReference = 7F781C2B3087E16D00EAE3D6 /* Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7F781C3A3087E1A400EAE3D6 /* Mobile_Activity8Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F781C403087E1A400EAE3D6 /* Build configuration list for PBXNativeTarget "Mobile_Activity8Tests" */;
+			buildPhases = (
+				7F781C363087E1A400EAE3D6 /* Sources */,
+				7F781C393087E1A400EAE3D6 /* Frameworks */,
+				7F781C373087E1A400EAE3D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F781C3F3087E1A400EAE3D6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7F781C3C3087E1A400EAE3D6 /* Mobile_Activity8Tests */,
+			);
+			name = Mobile_Activity8Tests;
+			productName = Mobile_Activity8Tests;
+			productReference = 7F781C3B3087E1A400EAE3D6 /* Mobile_Activity8Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -71,19 +115,23 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2700;
-				LastUpgradeCheck = 2700;
+				LastSwiftUpdateCheck = 2720;
+				LastUpgradeCheck = 2720;
 				TargetAttributes = {
 					7F781C2A3087E16D00EAE3D6 = {
 						CreatedOnToolsVersion = 27.0;
 					};
+					7F781C3A3087E1A400EAE3D6 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = 7F781C2A3087E16D00EAE3D6;
+					};
 				};
 			};
-			buildConfigurationList = 7F781C263087E16D00EAE3D6 /* Build configuration list for PBXProject "Mobile_Activity8: Data persistence with SwiftData and SwiftTest" */;
-			developmentRegion = en;
+			buildConfigurationList = 7F781C263087E16D00EAE3D6 /* Build configuration list for PBXProject "Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest" */;
+			developmentRegion = es;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
+				es,
 				Base,
 			);
 			mainGroup = 7F781C223087E16D00EAE3D6;
@@ -93,13 +141,19 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7F781C2A3087E16D00EAE3D6 /* Mobile_Activity8: Data persistence with SwiftData and SwiftTest */,
+				7F781C2A3087E16D00EAE3D6 /* Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest */,
+				7F781C3A3087E1A400EAE3D6 /* Mobile_Activity8Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7F781C293087E16D00EAE3D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		7F781C373087E1A400EAE3D6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
 			);
@@ -112,10 +166,23 @@
 			files = (
 			);
 		};
+		7F781C363087E1A400EAE3D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7F781C3F3087E1A400EAE3D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F781C2A3087E16D00EAE3D6 /* Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest */;
+			targetProxy = 7F781C3E3087E1A400EAE3D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		7F781C343087E16E00EAE3D6 /* Debug configuration for PBXProject "Mobile_Activity8: Data persistence with SwiftData and SwiftTest" */ = {
+		7F781C343087E16E00EAE3D6 /* Debug configuration for PBXProject "Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -176,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		7F781C353087E16E00EAE3D6 /* Release configuration for PBXProject "Mobile_Activity8: Data persistence with SwiftData and SwiftTest" */ = {
+		7F781C353087E16E00EAE3D6 /* Release configuration for PBXProject "Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -229,7 +296,7 @@
 			};
 			name = Release;
 		};
-		7F781C373087E16E00EAE3D6 /* Debug configuration for PBXNativeTarget "Mobile_Activity8: Data persistence with SwiftData and SwiftTest" */ = {
+		7F781C373087E16E00EAE3D6 /* Debug configuration for PBXNativeTarget "Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -252,26 +319,23 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 26.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.a00840591.Mobile-Activity8--Data-persistence-with-SwiftData-and-SwiftTest";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.a00840591.Mobile-Activity8-Data-persistence-with-SwiftData-and-SwiftTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
-				SDKROOT = auto;
+				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 27.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		7F781C383087E16E00EAE3D6 /* Release configuration for PBXNativeTarget "Mobile_Activity8: Data persistence with SwiftData and SwiftTest" */ = {
+		7F781C383087E16E00EAE3D6 /* Release configuration for PBXNativeTarget "Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -294,41 +358,92 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 26.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.a00840591.Mobile-Activity8--Data-persistence-with-SwiftData-and-SwiftTest";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.a00840591.Mobile-Activity8-Data-persistence-with-SwiftData-and-SwiftTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
-				SDKROOT = auto;
+				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 27.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7F781C413087E1A400EAE3D6 /* Debug configuration for PBXNativeTarget "Mobile_Activity8Tests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.a00840591.Mobile-Activity8Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest";
+			};
+			name = Debug;
+		};
+		7F781C423087E1A400EAE3D6 /* Release configuration for PBXNativeTarget "Mobile_Activity8Tests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.a00840591.Mobile-Activity8Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7F781C263087E16D00EAE3D6 /* Build configuration list for PBXProject "Mobile_Activity8: Data persistence with SwiftData and SwiftTest" */ = {
+		7F781C263087E16D00EAE3D6 /* Build configuration list for PBXProject "Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7F781C343087E16E00EAE3D6 /* Debug configuration for PBXProject "Mobile_Activity8: Data persistence with SwiftData and SwiftTest" */,
-				7F781C353087E16E00EAE3D6 /* Release configuration for PBXProject "Mobile_Activity8: Data persistence with SwiftData and SwiftTest" */,
+				7F781C343087E16E00EAE3D6 /* Debug configuration for PBXProject "Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest" */,
+				7F781C353087E16E00EAE3D6 /* Release configuration for PBXProject "Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest" */,
 			);
 			defaultConfigurationName = Release;
 		};
-		7F781C363087E16E00EAE3D6 /* Build configuration list for PBXNativeTarget "Mobile_Activity8: Data persistence with SwiftData and SwiftTest" */ = {
+		7F781C363087E16E00EAE3D6 /* Build configuration list for PBXNativeTarget "Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7F781C373087E16E00EAE3D6 /* Debug configuration for PBXNativeTarget "Mobile_Activity8: Data persistence with SwiftData and SwiftTest" */,
-				7F781C383087E16E00EAE3D6 /* Release configuration for PBXNativeTarget "Mobile_Activity8: Data persistence with SwiftData and SwiftTest" */,
+				7F781C373087E16E00EAE3D6 /* Debug configuration for PBXNativeTarget "Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest" */,
+				7F781C383087E16E00EAE3D6 /* Release configuration for PBXNativeTarget "Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		7F781C403087E1A400EAE3D6 /* Build configuration list for PBXNativeTarget "Mobile_Activity8Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F781C413087E1A400EAE3D6 /* Debug configuration for PBXNativeTarget "Mobile_Activity8Tests" */,
+				7F781C423087E1A400EAE3D6 /* Release configuration for PBXNativeTarget "Mobile_Activity8Tests" */,
 			);
 			defaultConfigurationName = Release;
 		};
