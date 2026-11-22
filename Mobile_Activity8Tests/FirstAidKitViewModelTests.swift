@@ -10,7 +10,7 @@ import SwiftData
 import Testing
 @testable import Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest
 
-/// Each test gets a new in-memory database, so tests never touch the app's real data.
+// cada test usa una base en memoria para no mover los datos reales
 @MainActor
 struct FirstAidKitViewModelTests {
     private let container: ModelContainer

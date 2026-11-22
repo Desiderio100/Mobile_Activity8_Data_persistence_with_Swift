@@ -8,7 +8,7 @@
 import Foundation
 import FoundationModels
 
-/// Writes a short usage note for a supply with the on-device model from Foundation Models.
+// genera la nota de uso con el modelo de Foundation Models
 struct UsageTipGenerator {
     private let model = SystemLanguageModel.default
 

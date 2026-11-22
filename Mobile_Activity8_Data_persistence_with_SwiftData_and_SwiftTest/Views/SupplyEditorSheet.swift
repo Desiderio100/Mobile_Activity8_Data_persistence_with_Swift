@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// Form used to add a new supply or edit an existing one.
+// mismo form para agregar y editar
 struct SupplyEditorSheet: View {
     @Environment(\.dismiss) private var dismiss
 

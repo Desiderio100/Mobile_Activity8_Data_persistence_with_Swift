@@ -8,7 +8,6 @@
 import Foundation
 import SwiftData
 
-/// A first aid kit item stored on the device with SwiftData.
 @Model
 final class Supply {
     var name: String
@@ -36,7 +35,7 @@ final class Supply {
     }
 }
 
-// MARK: - Business rules
+// MARK: - Validaciones
 
 extension Supply {
     static func isValidName(_ name: String) -> Bool {

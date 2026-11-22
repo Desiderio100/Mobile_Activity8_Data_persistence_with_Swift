@@ -1,61 +1,32 @@
 # Mi botiquín
 
-Mobile_Activity8: Data persistence with SwiftData and SwiftTest
-Desiderio Iván Ortegón Mortón (A00840591), TC2007B Group 501
+Actividad 8 de TC2007B (Gpo. 501) - Persistencia de datos con SwiftData y Swift Testing
+Desiderio Iván Ortegón Mortón - A00840591
 
-Mi botiquín is a section of the Cruz Roja Mexicana challenge app. A volunteer can register the supplies in their first aid kit, see which ones are expired or about to expire, and get a short usage note for each supply generated on the device with Foundation Models.
+Es una sección de la app de Cruz Roja. Sirve para llevar el control de lo que tienes en tu botiquín: registras los insumos con su cantidad y fecha de caducidad, y la app te los separa en caducados, los que caducan pronto (30 días o menos) y vigentes.
 
-## Features
+## Qué tiene
 
-- **CRUD with SwiftData:** add, list, edit and delete supplies (name, category, quantity, expiration date and notes). The data stays after closing the app.
-- **Expiration sections:** Caducados, Caducan pronto (30 days or less) and Vigentes, sorted by date.
-- **Foundation Models:** the "Sugerir nota de uso" button asks the on-device model for a short note about what the supply is for and how to store it. The user can edit the note before saving.
-- **Error handling:** validation, storage and model errors are typed errors and the user sees an alert in Spanish. If Apple Intelligence is not available, the button is disabled and the form explains why.
-- **Design (Apple HIG):** NavigationStack, a Form sheet with Cancelar and Guardar, swipe to delete, ContentUnavailableView for the empty list, SF Symbols, Dark Mode, Dynamic Type and VoiceOver labels.
+- CRUD con SwiftData: agregar, ver, editar y borrar insumos. Los datos se quedan guardados aunque cierres la app.
+- Foundation Models: en el formulario hay un botón de "Sugerir nota de uso" que usa el modelo del iPhone para escribir para qué sirve el insumo y cómo guardarlo. La nota se puede editar antes de guardar.
+- Manejo de errores: si falta el nombre, la cantidad es 0 o falla al cargar o guardar, sale una alerta con el mensaje. Si Apple Intelligence no está activado, el botón de sugerencia se desactiva y te dice por qué.
+- MVVM: las vistas no tocan SwiftData directo, todo pasa por `FirstAidKitViewModel`.
+- Diseño con la HIG de Apple: NavigationStack, sheet con Cancelar y Guardar, swipe para borrar, pantalla de lista vacía, SF Symbols y modo oscuro.
 
-## Architecture (MVVM)
+## Estructura
 
-| Layer | Files |
-| --- | --- |
-| Model | `Supply` (@Model), `SupplyCategory`, `ExpirationStatus`, `SupplyDraft`, `SupplyError` |
-| ViewModel | `FirstAidKitViewModel`: fetch, insert, update, delete and save with the `ModelContext` |
-| Service | `UsageTipGenerator`, `UsageTipError` (Foundation Models) |
-| View | `ContentView`, `SupplyEditorSheet`, `SupplyRow`, `SupplyStyle`, `ErrorAlert` |
+- `Models`: `Supply` (el @Model), categorías, estado de caducidad, errores y el draft del formulario
+- `ViewModels`: `FirstAidKitViewModel`
+- `Services`: `UsageTipGenerator` (Foundation Models)
+- `Views`: lista, formulario, fila y alerta de errores
 
-The views never write to SwiftData directly. The view model receives the `ModelContext` through `setContext`, so the tests can give it an in-memory container.
+## Pruebas
 
-## Error messages
+Se corren con Cmd + U. Son 2 archivos de pruebas con Swift Testing:
 
-| Case | Message |
-| --- | --- |
-| Empty name | Escribe el nombre del insumo. |
-| Quantity of 0 or less | La cantidad debe ser mayor que cero. |
-| Fetch fails | No se pudieron cargar los insumos. Intenta de nuevo. |
-| Save fails (changes are rolled back) | No se pudieron guardar los cambios. Intenta de nuevo. |
-| Apple Intelligence off or not supported | Shown under the notes field, the button is disabled. |
-| The model cannot answer | Alert asking to try again or write the note manually. |
+- `SupplyTests`: valida el nombre, la cantidad y el estado de caducidad.
+- `FirstAidKitViewModelTests`: prueba agregar, rechazar un nombre vacío, editar y borrar. Usan una base de datos en memoria para no tocar los datos reales.
 
-## User story and acceptance criteria
+## Cómo correrlo
 
-US-1: As a Cruz Roja volunteer, I want to register the supplies in my first aid kit so that I know what I have and when each one expires.
-
-| Acceptance criterion | Test |
-| --- | --- |
-| A supply cannot be saved without a name. | `nameValidation`, `emptyNameIsRejected` |
-| The quantity must be greater than zero. | `quantityValidation` |
-| A saved supply appears in the list. | `addSavesSupply` |
-| A supply can be edited and deleted. | `updateChangesSupply`, `deleteRemovesSupply` |
-| Supplies that expire in 30 days or less are flagged. | `expirationStatus` |
-
-## Unit tests (Swift Testing)
-
-Run them with Product > Test (Cmd + U).
-
-- `SupplyTests`: name validation, quantity validation and expiration status.
-- `FirstAidKitViewModelTests`: add, reject an empty name, update and delete. Each test uses a new in-memory `ModelContainer`, so the app's real data is never touched.
-
-## Requirements
-
-- Xcode 27 and iOS 27 (iPhone and iPad).
-- Open `Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest.xcodeproj`, choose an iPhone simulator and press Cmd + R.
-- Usage notes need Apple Intelligence turned on. Without it, the rest of the app works normally.
+Abrir `Mobile_Activity8_Data_persistence_with_SwiftData_and_SwiftTest.xcodeproj` en Xcode 27, escoger un simulador de iPhone y darle Cmd + R. Para las sugerencias se necesita Apple Intelligence activado; sin eso lo demás funciona igual.

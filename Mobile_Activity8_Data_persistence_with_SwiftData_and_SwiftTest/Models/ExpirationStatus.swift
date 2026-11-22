@@ -12,7 +12,7 @@ nonisolated enum ExpirationStatus: CaseIterable, Identifiable {
     case expiringSoon
     case valid
 
-    /// Days before the expiration date when a supply is flagged as expiring soon.
+    // dias antes de caducar para que salga en "Caducan pronto"
     static let warningPeriodInDays = 30
 
     init(expirationDate: Date, referenceDate: Date = .now, calendar: Calendar = .current) {

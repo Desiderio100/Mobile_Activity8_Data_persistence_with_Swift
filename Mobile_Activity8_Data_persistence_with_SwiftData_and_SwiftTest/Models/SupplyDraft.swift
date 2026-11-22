@@ -7,8 +7,7 @@
 
 import Foundation
 
-/// Editable copy of a supply used by the form.
-/// Nothing is stored until the view model validates and saves it.
+// copia del insumo para el formulario, no se guarda hasta que le das Guardar
 struct SupplyDraft {
     var name = ""
     var category = SupplyCategory.woundCare

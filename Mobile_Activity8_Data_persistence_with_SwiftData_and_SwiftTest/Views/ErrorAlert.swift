@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-/// State of an alert that tells the user why an operation failed.
 struct ErrorAlert {
     var isPresented = false
     private(set) var title = ""

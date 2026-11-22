@@ -9,7 +9,6 @@ import Foundation
 import Observation
 import SwiftData
 
-/// Keeps the list of supplies and performs every read and write to SwiftData.
 @MainActor
 @Observable
 final class FirstAidKitViewModel {
@@ -23,7 +22,7 @@ final class FirstAidKitViewModel {
         try load()
     }
 
-    // MARK: - Read
+    // MARK: - Leer
 
     func load() throws {
         let context = try requireContext()
@@ -42,7 +41,7 @@ final class FirstAidKitViewModel {
         supplies.filter { $0.expirationStatus == status }
     }
 
-    // MARK: - Create, update and delete
+    // MARK: - Agregar, editar y borrar
 
     func add(_ draft: SupplyDraft) throws {
         try validate(draft)
@@ -80,7 +79,7 @@ final class FirstAidKitViewModel {
         try save(context)
     }
 
-    // MARK: - Usage tips (Foundation Models)
+    // MARK: - Foundation Models
 
     var tipUnavailableMessage: String? {
         tipGenerator.unavailabilityReason?.errorDescription
@@ -111,8 +110,7 @@ final class FirstAidKitViewModel {
         return context
     }
 
-    /// Writes the pending changes and refreshes the list.
-    /// If saving fails, the changes are rolled back so the list never shows unsaved data.
+    // si falla el save se hace rollback para no dejar cambios a medias
     private func save(_ context: ModelContext) throws {
         do {
             try context.save()
