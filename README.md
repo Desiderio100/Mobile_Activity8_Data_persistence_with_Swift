@@ -1,6 +1,7 @@
 # Mi botiquín
 
 Actividad 8 de TC2007B (Gpo. 501) - Persistencia de datos con SwiftData y Swift Testing
+
 Desiderio Iván Ortegón Mortón - A00840591
 
 Es una sección de la app de Cruz Roja. Sirve para llevar el control de lo que tienes en tu botiquín: registras los insumos con su cantidad y fecha de caducidad, y la app te los separa en caducados, los que caducan pronto (30 días o menos) y vigentes.
